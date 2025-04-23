@@ -1,0 +1,174 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "Rem",
+         Animation = "Rem: Rezero"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"1234"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=71448917717797",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script Farm"})
+     local Tab2o = MakeTab({Name = "Script Aoto Bounty"})
+     
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "Redz Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+  end
+  })
+  
+  AddButton(Tab2o, {
+     Name = "Vexeze Auto Bounty Hub",
+    Callback = function()
+	getgenv().Config = {
+ ["Performance"] = {
+["Enabled"] = false, ---- true
+["Transparency"] = {
+["All Objects"] = true, --- No Editing
+["NilInstances"] = true, --- No Editing
+["DescendantAdded"] = true --- No Editing
+},
+ ["Graphics"] = {
+["Water"] = {
+["WaveSize"] = 0,
+["WaveSpeed"] = 0,
+["Reflectance"] = 0,
+["Transparency"] = 0
+}, --- No Editing
+ ["Lighting"] = {
+["GlobalShadows"] = false, --- true
+["FogEnd"] = 9e9, --- No Editing
+["Brightness"] = 0 --- No Editing
+},
+["QualityLevel"] = "Level01",
+["DisableEffects"] = true --- No Editing
+},
+ ["ObjectProperties"] = {
+["Material"] = "Plastic",
+["Reflectance"] = 0, --- No Editing
+["RemoveDecals"] = true, --- No Editing
+["CustomTexture"] = 10385902758728957 } --- No Editing
+},
+ ["Team"] = "Pirates",
+ ["Safe Health"] = {40, 50},--- 60 - 70
+ ["Skip"] = { 
+ ["Fruit"] = {["Enabled"] = true, --- false
+ ["Avoid Fruit"] = {
+ "Portal-Portal", 
+ "Kitsune-Kitsune"
+ }
+ },
+ ["Avoid V4"] = true --- false
+ },
+ ["Hunt Method"] = {
+ ["Use Move Predict"] = true, --- false
+ ["Hit and Run"] = true
+ }, --- false
+ ["Spam All Skill On V4"] = {
+ ["Enabled"] = true, --- false
+ ["Weapons"] = {"Melee", "Gun", "Sword", "Blox Fruit"}
+ },
+ ["Chat"] = {
+ ["Enabled"] = false, --- false
+ ["Message"] = {"Vxeze Hub Auto Bounty"}
+ },
+ ["Custom Y Run"] = {
+ ["Enabled"] = true, --- false
+ ["Y Run"] = 5000 --- <5000
+ },
+ ["Misc"] = {
+ ["Auto Store Fruit"] = true,
+ ["Auto Random Fruit"] = true,
+ ["White Screen"] = false, --- true
+ ["Click Delay"] = 0.01,
+ },
+ ["Items"] = {["Use"] = {"Melee", "Gun", "Sword"},
+ ["Melee"] = {
+ ["Enable"] = true,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 1.5},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["C"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ }
+ },
+ ["Blox Fruit"] = {
+ ["Enable"] = true,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["C"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["V"] = {["Enable"] = false, ["HoldTime"] = 0.1},
+ ["F"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ }
+ },
+ ["Sword"] = {
+ ["Enable"] = true,
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ } 
+ },
+ ["Gun"] = {
+ ["Enable"] = true, 
+ ["Skills"] = {
+ ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+ ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1}
+ } 
+ }
+ }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubAutoBounty"))() 
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "Vexeze Hub",
+    Callback = function()	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/Skidlamcho.txt"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "Xeno Hub",
+    Callback = function()	  getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "Xeter Hub",
+    Callback = function()	  getgenv().Version = "V2"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+  end
+  })
